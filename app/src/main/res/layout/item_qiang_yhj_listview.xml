@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/iv_yhj_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yujbj"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="#f44e6e"
+                android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/tv_yhj_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="45sp"
+                    android:textColor="#f44e6e"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_guize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="满30元可用"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期至："
+                    android:textSize="14sp"
+                    android:textColor="#969696" />
+
+                <TextView
+                    android:id="@+id/tv_qiang_huodongshijian_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017/12/30"
+                    android:textSize="14sp"
+                    android:textColor="#969696" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="0px"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="券"
+        android:textColor="#969696"
+        android:textSize="50dp"
+        android:layout_gravity="center_horizontal"
+       />
+
+            <TextView
+                android:id="@+id/tv_qiang_yhj_lijishiyong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即领取"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_yhj"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10px"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

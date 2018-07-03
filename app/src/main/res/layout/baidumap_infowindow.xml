@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="洗车工：" />
+    <TextView
+        android:id="@+id/tv_entname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" zhangsan" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗车工号:"/>
+    <TextView
+        android:id="@+id/tv_xichegonghao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00001" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话号码："/>
+        <TextView
+            android:id="@+id/tv_dianhua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18240899905" />
+    </LinearLayout>
+</LinearLayout>

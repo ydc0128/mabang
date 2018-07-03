@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_addbaoxian_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/tv_addbaoxian_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_addbaoxian_title"
+            android:textColor="#8B3A3A"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_addbaoxian_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/btn_mycar_tianjiacheliang"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_addbaoxian_aiche"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_addbaoxian_aiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_addbaoxian_aiche"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_addbaoxian_aiche_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_addbaoxian_aiche"
+            android:text="@string/tv_xiche_aiche_name"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_addbaoxian_aiche"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_addbaoxian_shangyexian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/cb_addbaoxian_shangyexian"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_shangyexian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian"
+                    android:text="@string/tv_addbaoxian_shangyexian"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_addbaoxian_shangyexian"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_shangyexian_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian"
+                    android:text="@string/tv_addbaoxian_shangyexian_shijian"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_shangyexian_zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/iv_addbaoxian_shangyexian"
+                    android:text="@string/tv_addbaoxian_shangyexian_zongjia"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_zongjia"
+                    android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_zongjia"
+                    android:text="@string/tv_addbaoxian_renmingbi" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addbaoxian_shangyexian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_baoe"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_cheliangsunshixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_cheliangsunshi"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_cheliangsunshi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_cheliangsunshi"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_cheliangsunshi"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_cheliangsunshi_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_cheliangsunshi_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_cheliangsunshi_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_cheliangsunshi_baoe"
+                        android:background="@mipmap/ic_launcher"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_cheliangsunshixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_cheliangsunshixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_cheliangsunshixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_cheliangsunshi_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_disanzhezerenxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_disanfangzerenxian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_disanfangzerenxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_disanfangzerenxian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_disanfangzerenxian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_disanfangzerenxian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_disanfangzerenxian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_disanfangzerenxian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_disanfangzerenxian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_disanfangzerenxian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_disanfangzerenxian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_disanfangzerenxian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_disanfangzerenxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_quanchedaoqiangxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_quanchedaoqiangxian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_quanchedaoqiangxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_quanchedaoqiangxian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_quanchedaoqiangxian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_quanchedaoqiangxian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baoe"
+                        android:background="@mipmap/ic_launcher"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_quanchedaoqiangxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_sijizuoweizerenxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_sijizuoweizerenxian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_sijizuoweizerenxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_sijizuoweizerenxian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_sijizuoweizerenxian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_sijizuoweizerenxian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_sijizuoweizerenxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_chengkezuoweizerenxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_chengkezuoweizerenxian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_chengkezuoweizerenxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_chengkezuoweizerenxian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_chengkezuoweizerenxian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_chengkezuoweizerenxian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_bolidandubosuixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_bolidanduposuixian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_bolidanduposuixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_bolidanduposuixian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_bolidanduposuixian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_bolidanduposuixian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_bolidanduposuixian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_bolidanduposuixian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_bolidanduposuixian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_bolidanduposuixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_bolidanduposuixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_bolidanduposuixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_chengkezuoweizerenxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_cheshenhuahensunshixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_cheshenhuahensunshixian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_cheshenhuahensunshixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_cheshenhuahensunshixian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_cheshenhuahensunshixian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_cheshenhuahensunshixian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_cheshenhuahensunshixian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_ziransunshixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_ziransunshixian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_ziransunshixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_ziransunshixian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_ziransunshixian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_ziransunshixian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_ziransunshixian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_ziransunshixian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_ziransunshixian_baoe"
+                        android:background="@mipmap/ic_launcher"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_ziransunshixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_ziransunshixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_ziransunshixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_ziransunshixian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_fadongjisheshuisunshixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_fadongjisheshuisunshixian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_fadongjisheshuisunshixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_fadongjisheshuisunshixian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_fadongjisheshuisunshixian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baoe"
+                        android:textSize="16sp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baoe"
+                        android:background="@mipmap/ic_launcher"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_fadongjisheshuisunshixian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_zhidingxiulichangxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_zhidingxiulichangxian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_zhidingxiulichangxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_zhidingxiulichangxian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_zhidingxiulichangxian"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baoe"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_zhidingxiulichangxian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baoe"
+                        android:background="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_zhidingxiulichangxian_baofei"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_addbaoxian_shangyexian_jidongchesunshixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_jidongchesunshixian"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_jidongchesunshixian_baoe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tv_addbaoxian_shangyexian_jidongchesunshixian_baoe"
+                        android:textSize="16sp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_addbaoxian_shangyexian_jidongchesunshixian_baoe"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_addbaoxian_shangyexian_jidongchesunshixian_baoe"
+                        android:background="@mipmap/ic_launcher"
+                        android:visibility="invisible" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_addbaoxian_shangyexian_jidongchesunshixian_baofei"
+                        android:layout_toStartOf="@+id/tv_addbaoxian_shangyexian_jidongchesunshixian_baofei"
+                        android:text="@string/tv_addbaoxian_renmingbi" />
+
+                    <TextView
+                        android:id="@+id/tv_addbaoxian_shangyexian_jidongchesunshixian_baofei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_jidongchesunshixian_baofei"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/id_addbaoxian_shangyexian_xianzhong_jidongchesunshixian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/cb_addbaoxian_shangyexian_jidongchesunshixian"
+                        android:maxEms="5"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_jidongchesunshixian"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_shangyexian_xianzhong_yincangweitoubaoxianbie"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_addbaoxian_shangyexian_xianzhong_yincangweitoubaoxianbie"
+                        style="@null"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/checkbox_style"
+                        android:button="@null"
+                        android:checked="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_addbaoxian_jiaoqiangxian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/cb_addbaoxian_jiaoqiangxian"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_jiaoqiangxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cb_addbaoxian_jiaoqiangxian"
+                    android:text="@string/tv_addbaoxian_jiaoqiangxian"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_addbaoxian_jiaoqiangxian"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_jiaoqiangxian_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_addbaoxian_jiaoqiangxian"
+                    android:text="@string/tv_addbaoxian_jiaoqiangxian_shijian"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_addbaoxian_jiaoqiangxian_zongjia"
+                    android:layout_toStartOf="@+id/tv_addbaoxian_jiaoqiangxian_zongjia"
+                    android:text="@string/tv_addbaoxian_renmingbi" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_jiaoqiangxian_zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/iv_addbaoxian_jiaoqiangxian"
+                    android:text="@string/tv_addbaoxian_jiaoqiangxian_zongjia"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addbaoxian_jiaoqiangxian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_siwangshangcan"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_siwangshangcan"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_yiliaofeiyong"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_yiliaofeiyong"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_caichansunshi"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_caichansunshi"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_wuzesiwangshangcan"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_wuzesiwangshangcan"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_wuzeyiliaofeiyong"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_wuzeyiliaofeiyong"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_jiaoqiangxianbaoxianzeren_wuzecaichansunshi"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_jiaoqiangxian_peichangxiane_wuzecaichansunshi"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_addbaoxian_chechuanshui"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/cb_addbaoxian_chechuanshui"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_chechuanshui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/cb_addbaoxian_chechuanshui"
+                    android:text="@string/tv_addbaoxian_chechuanshui"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_addbaoxian_chechuanshui"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_chechuanshui_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_addbaoxian_chechuanshui"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_addbaoxian_chechuanshui_zongjia"
+                    android:layout_toStartOf="@+id/tv_addbaoxian_chechuanshui_zongjia"
+                    android:text="@string/tv_addbaoxian_renmingbi" />
+
+                <TextView
+                    android:id="@+id/tv_addbaoxian_chechuanshui_zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/iv_addbaoxian_chechuanshui"
+                    android:text="@string/tv_addbaoxian_chechuanshui_zongjia"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_addbaoxian_chechuanshui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_chechuanshuijiaonamingxi"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_jine"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_chechuanshuijiaonamingxi_jinnianyingjiao"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_jine_jinnianyingjiao"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_chechuanshuijiaonamingxi_qunianyingjiao"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_jine_qunianyingjiao"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_chechuanshuijiaonamingxi_zhinajin"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/tv_addbaoxian_chechuanshui_jine_zhinajin"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff">
+
+        <TextView
+            android:id="@+id/tv_addbaoxian_hejijine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_addbaoxian_hejinjie"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_addbaoxian_zongjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_addbaoxian_hejijine"
+            android:text="@string/tv_addbaoxian_zongjia"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_addbaoxian_qutoubao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="@string/btn_addbaoxian_qutoubao"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_fragment_baoxianxinxi_dengjiriqi"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fragment_baoxianxinxi_dengjiriqi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="#989898"
+                    android:hint="正确输入格式：2011-01-01"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#656565"
+                    android:text="@string/tv_fragment_baoxianxinxi_chejiahao"
+
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fragment_baoxianxinxi_chejiahao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="#989898"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#656565"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_fragment_baoxianxinxi_fadongjihao"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fragment_baoxianxinxi_fadongjihao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:textColor="#989898"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_baoxianxinxi_zhengjianleixing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_fragment_baoxianxinxi_zhengjianleixing"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_baoxianxinxi_zhengjianleixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tv_fragment_baoxianxinxi_zhengjianleixing_qingxuanze"
+                    android:textColor="#989898"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_fragment_baoxianxinxi_zhengjianhaoma"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_fragment_baoxianxinxi_zhengjianhaoma"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="#989898"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_fragment_baoxianxinxi_baocun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_gruee_bg"
+                android:text="@string/btn_fragment_jibenxinxi_baocun"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

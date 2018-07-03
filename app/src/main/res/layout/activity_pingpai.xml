@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titlebg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pingpai_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_pingpai_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_pingpai_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_pingpai_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/btn_mycar_bianji"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSearchFrameDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <EditText
+            android:id="@+id/et_pingpai_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@drawable/search"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="36dp"
+            android:textSize="18sp"
+            android:hint="请输入品牌名称"/>
+
+        <ImageView
+            android:id="@+id/iv_pingpai_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/quxiao"
+            android:layout_centerInParent="true"
+            android:paddingRight="20dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lv_pingpai_listview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        />
+    <com.example.administrator.ydwlxcpt.View.SideBar
+        android:id="@+id/sb_sidebar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|right"
+        />
+</FrameLayout>
+</LinearLayout>

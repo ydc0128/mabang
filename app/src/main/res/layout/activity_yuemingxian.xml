@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titlebg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_yuemingxi_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_yuemingxi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消费明细"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btn_yuemingxi_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/btn_mycar_tianjiacheliang"
+            android:textColor="@color/textcolor"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_yuemingxi_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_mydingdan_tishi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="150dp"-->
+        <!--android:text="@string/tv_mydingdan_tishi"-->
+        <!--android:textColor="@color/titlebg"-->
+        <!--android:textSize="24sp" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_mydingdan_xiadan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_mydingdan_tishi"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:background="@drawable/btn_gruee_bg"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="@string/btn_mydingdan_xiadan"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20sp" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xiaofei"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="您还没有下单消费~"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_yuemingxi_listview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

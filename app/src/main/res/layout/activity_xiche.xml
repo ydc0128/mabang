@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titlebg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_xiche_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_xiche_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tv_xiche_title"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_xiche_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_launcher"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_xiche_aiche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/dingdan_car" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_aiche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/car"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_xiche_wodeaiche"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_aiche_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_xiche_aiche"
+                    android:layout_toRightOf="@+id/tv_xiche_aiche"
+                    android:text="@string/tv_xiche_aiche_name"
+                    android:textColor="#989898"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xiche_aiche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/more" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:id="@+id/rl_xiche_weizhi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/weizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/dingdan_weizhi" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_weizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/weizhi"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_xiche_cheliangweizhi"
+                    android:textColor="#656565"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_weizhi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/iv_xiche_weizhi"
+                    android:layout_toRightOf="@+id/tv_xiche_weizhi"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/tv_main_cheliangweizhi"
+                    android:textColor="#989898"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xiche_weizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/buchongweizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/dingdan_buchongweizhi" />
+
+                <EditText
+                    android:id="@+id/et_xiche_weizhi_buchong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/buchongweizhi"
+                    android:background="#ffffff"
+                    android:hint="@string/et_xiche_weizhi_buchong"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#989898"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_xiche_shijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/dingdan_time" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/time"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_xiche_fuwushijian"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_shijian_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/iv_xiche_shijian"
+                    android:layout_toRightOf="@+id/tv_xiche_shijian"
+                    android:text="@string/tv_xiche_shijian_name"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xiche_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/more" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_xiche_xiche"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/chewai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/chewai" />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_xiche_chewai"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_chewai_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_xiche_chewai"
+                    android:layout_toStartOf="@+id/cb_xiche_xiche_chewai"
+                     />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_xiche_chewai_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_xiche_chewai"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_xiche_chewai"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_chewai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/chewai"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <TextView
+                android:id="@+id/tv_chewaiqingxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/biaozhun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/biaozhun" />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_xiche_cheneiwai"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_cheneiwan_buchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/tv_xiche_xiche_cheneiwai"
+                    android:text="@string/tv_xiche_xiche_cheneiwai_buchong"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_cheneiwai_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_xiche_cheneiwai"
+                    android:layout_toStartOf="@+id/cb_xiche_xiche_cheneiwai"
+                     />
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_xiche_cheneiwai_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_xiche_cheneiwai"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_xiche_cheneiwai"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_cheneiwai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/biaozhun"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <TextView
+                android:id="@+id/tv_biaozhunqingxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/fadongji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fadongji" />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_xiche_fadongji"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_fadongji_buchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/tv_xiche_xiche_fadongji"
+                    android:text="@string/tv_xiche_xiche_fadongji_buchong"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_xiche_fadongji_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_xiche_fadongji"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_xiche_fadongji"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_fadongji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/fadongji"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_xiche_fadongji_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_xiche_fadongji"
+                    android:layout_toStartOf="@+id/cb_xiche_xiche_fadongji" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <TextView
+                android:id="@+id/tv_fagongjiqingxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/tv_xiche_meirong"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/dala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/dala" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_dala"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/dala"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_meirong_dala"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_dala_buchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/tv_xiche_meirong_dala"
+                    android:text="@string/tv_xiche_meirong_dala_buchong"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_dala_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_meirong_dala"
+                    android:layout_toStartOf="@+id/cb_xiche_meirong_dala"
+                    />
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_meirong_dala_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_meirong_dala"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_meirong_dala"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <TextView
+                android:id="@+id/tv_dala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/shinei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shinei" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_shinei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/shinei"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_meirong_shinei"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_shinei_buchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/tv_xiche_meirong_shinei"
+                    android:text="@string/tv_xiche_meirong_shinei_bnchong"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_shinei_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_meirong_shinei"
+                    android:layout_toStartOf="@+id/cb_xiche_meirong_shinei"
+                     />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_meirong_shinei_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_meirong_shinei"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_meirong_shinei"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:id="@+id/yinqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/lungu" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_yinqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/yinqing"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_xiche_meirong_yinqing"
+                    style="@null"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null" />
+
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_ynqing_buchong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/tv_xiche_meirong_yinqing"
+                    android:text="@string/tv_xiche_meirong_shinei_bnchong"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_xiche_meirong_yinqing_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/cb_xiche_meirong_yinqing"
+                    android:layout_toStartOf="@+id/cb_xiche_meirong_yinqing"
+                    />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_xiche_meirong_yinqing_fuwu"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="60dp"-->
+                    <!--android:layout_toLeftOf="@+id/cb_xiche_meirong_yinqing"-->
+                    <!--android:layout_toStartOf="@+id/cb_xiche_meirong_yinqing"-->
+                    <!--android:text="@string/tv_xiche_fuwujieshao"-->
+                    <!--android:textColor="@android:color/holo_blue_dark"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:visibility="invisible" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/yinqing"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/fengexian" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fengexian" />
+
+            <TextView
+                android:id="@+id/tv_shineijingxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_xiche_daijinjuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/daijinquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/daijinquan" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/daijinquan"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/tv_xiche_daijinjuan"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_xiche_daijinquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/tv_xiche_daijinjuan_jine"
+            android:textColor="#C0C0C0"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/fengexian" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="洗车"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_xiche_hejijiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tv_xiche_hejijiage"
+            android:textColor="@color/titlebg"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_xiche_jiagedanwei"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="合计"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_xiche_zongjine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/tv_xiche_hejijiage"
+            android:textColor="@color/titlebg"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_xiche_jiagedanwei"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:id="@+id/ll_fuwufei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="（"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="含服务"
+            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_xiche_fuwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tv_xiche_hejijiage"
+                android:textColor="@color/titlebg"
+                android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_xiche_jiagedanwei"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="）"
+            android:textSize="18sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_xiche_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/tv_xiche_tijiaodingdan"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
